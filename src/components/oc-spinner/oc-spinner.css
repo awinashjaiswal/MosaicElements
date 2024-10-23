@@ -1,0 +1,30 @@
+:host {
+  display: block;
+}
+
+/* spinner.css */
+.spinner {
+  @apply flex justify-center items-center;
+  width: 40px;
+  height: 40px;
+  position: relative;
+ 
+}
+
+.double-bounce1, .double-bounce2 {
+  @apply absolute w-full h-full bg-teal-500 opacity-75 rounded-full;
+  animation: bounce 2.0s infinite ease-in-out;
+}
+
+.double-bounce2 {
+  animation-delay: -1.0s;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+}

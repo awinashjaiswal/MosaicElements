@@ -1,0 +1,12 @@
+{
+  "type": "oc-html-editor",
+  "label": "Html Editor",
+  "tags": ["editor"],
+  "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAATUlEQVR4nGNgGAWjYEgADwYGhscMDAz/qYwfQc0GM6ht+H8kS+AcaoP/MHMH1IL/aHKE+IPPAkoA/Sx4ROtk6kEjSx7BMtooGAWDHAAAKol/uh6xabEAAAAASUVORK5CYII=",
+  "canHaveChildren": false,
+  "props": {
+    
+   
+    "style": {"type": "object", "label": "Styles", "value": {"flex": 1}}
+  }
+}

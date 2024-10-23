@@ -1,0 +1,6 @@
+:host {
+  display: block;
+}
+.grid-container {
+  @apply grid grid-flow-row-dense grid-cols-12;
+}

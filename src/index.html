@@ -3,12 +3,140 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
-    <title>Stencil Component Starter</title>
+    <title>Ocular component demo page</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
+    Compiled and minified JavaScript -->
+   <!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
     <script type="module" src="/build/componentlibrary.esm.js"></script>
     <script nomodule src="/build/componentlibrary.js"></script>
   </head>
   <body>
-    <my-component first="Stencil" last="'Don't call me a framework' JS"></my-component>
+    <oc-container parallax="true"  background-image="https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-breath-of-the-wild-2/3/38/Link2.png">
+      <oc-collapsible title="Carousel">
+        <oc-carousel>
+          <div>
+            <img width="100%" src="http://localhost:3333/images/image1.webp" alt="Slide 1" />
+            <p>Slide 1 Content</p>
+          </div>
+          <div>
+            <img width="100%" src="http://localhost:3333/images/image2.webp" alt="Slide 2" />
+            <p>Slide 2 Content</p>
+          </div>
+          <div>
+            <img width="100%" src="http://localhost:3333/images/image3.webp" alt="Slide 3" />
+            <p>Slide 3 Content</p>
+          </div>
+        </oc-carousel>
+
+      </oc-collapsible>
+
+      
+      
+      <oc-collapsible title="Html Editor">
+        <oc-html-editor></oc-html-editor>
+      </oc-collapsible>
+      <oc-collapsible title="Button">
+        <oc-button aria-label="outline" shape="round" variant="outlined" tabindex="0" label="Outlined" onclick="clickEvent(event)"></oc-button>
+        <oc-button aria-label="Solid" size="small" variant="solid" tabindex="0" label="Solid" onclick="clickEvent(event)"></oc-button>
+        <oc-button aria-label="filled" variant="filled" tabindex="0" label="Filled" onclick="clickEvent(event)"></oc-button>
+        <oc-button aria-label="text" variant="text" tabindex="0" label="Text" onclick="clickEvent(event)"></oc-button>
+        <oc-button aria-label="dashed" variant="dashed" tabindex="0" label="Dashed" onclick="clickEvent(event)"></oc-button>
+        <oc-button aria-label="link" variant="link" tabindex="0" size="large" label="Link" onclick="clickEvent(event)"></oc-button>
+        <oc-button aria-label="link"  shape="circle" tabindex="0"  onclick="clickEvent(event)">
+          <svg
+            slot="start-icon" 
+            xmlns="http://www.w3.org/2000/svg" 
+            fill="none" 
+            viewBox="0 0 24 24" 
+            stroke="currentColor" 
+            class="w-5 h-5" 
+>
+            <path 
+              stroke-linecap="round" 
+              stroke-linejoin="round" 
+              stroke-width="2" 
+              d="M12 4v16m8-8H4" 
+            />
+          </svg>
+        </oc-button>
+
+        
+      </oc-collapsible>
+
+      <!-- header exmaple -->
+      <oc-collapsible title="Header">
+        <oc-header>
+          <a slot="logo" href="#">
+            <img height="50" width="100"  src="https://www.shutterstock.com/image-vector/letter-ss-tech-logo-design-260nw-2235233987.jpg" alt="Brand Logo" class="h-8 w-auto" />
+          </a>
+        
+          <!-- Navigation Links Slot -->
+          <div slot="nav-links">
+            <a href="#home" class="text-gray-600 hover:text-gray-900">Home</a>
+            <a href="#about" class="text-gray-600 hover:text-gray-900">About</a>
+            <a href="#services" class="text-gray-600 hover:text-gray-900">Services</a>
+            <a href="#contact" class="text-gray-600 hover:text-gray-900">Contact</a>
+          </div>
+        
+          <!-- Right Buttons Slot -->
+          <div slot="right-buttons">
+            <oc-button  label="Login" shape="round" variant="outlined"></oc-button>
+            <oc-button  label="Sign Up" shape="round" ></oc-button>
+          </div>
+          
+        
+          <!-- Mobile Navigation Links Slot -->
+           <div slot="mobile-nav-links">
+            <a  href="#home" class="block text-gray-600 hover:text-gray-900 mb-2">Home</a>
+            <a href="#about" class="block text-gray-600 hover:text-gray-900 mb-2">About</a>
+            <a  href="#services" class="block text-gray-600 hover:text-gray-900 mb-2">Services</a>
+            <a  href="#contact" class="block text-gray-600 hover:text-gray-900">Contact</a>
+           </div>
+          
+        </oc-header>
+      </oc-collapsible>
+      <oc-collapsible title="Input">
+        <oc-input></oc-input>
+      </oc-collapsible>
+      <oc-collapsible title="Row Column">
+        <oc-row>
+          <oc-column col-span="3">
+            <div style="border:1px solid grey;">Column 1 (3/12)</div>
+          </oc-column>
+          <oc-column col-span="6">
+            <div style="border:1px solid green;">Column 2 (6/12)</div>
+          </oc-column>
+          <oc-column col-span="3">
+            <div style="border:1px solid red;">Column 3 (3/12)</div>
+          </oc-column>
+        </oc-row>
+        
+      </oc-collapsible>
+      <oc-collapsible title="card">
+        <oc-card>
+          <div slot="header">header</div>
+          <div slot="content">Content</div>
+          <div slot="footer">footer</div>
+        </oc-card>
+      </oc-collapsible>
+
+      <oc-collapsible title="image">
+        
+        <oc-img src="http://localhost:3333/images/image1.webp" alt="Mosiac image"></oc-img>
+      </oc-collapsible>
+
+      <oc-collapsible title="spinner">
+        <oc-spinner></oc-spinner>
+      </oc-collapsible>
+    </oc-container>
   </body>
+  <script type="text/JavaScript">
+    function clickEvent(event) {
+      console.log('button clicked', event)
+    }
+
+    // const button = document.querySelector('oc-button');
+    // button.addEventListener('onClick', clickEvent)
+  </script>
 </html>

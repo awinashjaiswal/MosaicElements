@@ -1,0 +1,109 @@
+:host {
+  display: block;
+}
+.grid-column {
+  @apply h-auto;
+}
+
+/* column.css
+.oc-col-span-1 {
+  @apply col-span-1
+}
+
+.oc-col-span-2 {
+  @apply col-span-2
+}
+
+.oc-col-span-3 {
+  @apply col-span-3
+}
+
+.oc-col-span-4 {
+  @apply col-span-4
+}
+
+.oc-col-span-5 {
+  @apply col-span-5
+}
+
+.oc-col-span-6 {
+  @apply col-span-6
+}
+
+.oc-col-span-7 {
+  @apply col-span-7
+}
+
+.oc-col-span-8 {
+  @apply col-span-8
+}
+
+.oc-col-span-9 {
+  @apply col-span-9
+}
+
+.oc-col-span-10 {
+  @apply col-span-10
+}
+
+.oc-col-span-11 {
+  @apply col-span-11
+}
+
+.oc-col-span-12 {
+  @apply col-span-12
+} */
+
+
+/* column.css */
+:host {
+  display: block; /* Ensure it behaves as a block element */
+}
+
+:host(.oc-col-span-1) {
+  grid-column: span 1 / span 1;
+}
+
+:host(.oc-col-span-2) {
+  grid-column: span 2 / span 2;
+}
+
+:host(.oc-col-span-3) {
+  grid-column: span 3 / span 3;
+}
+
+:host(.oc-col-span-4) {
+  grid-column: span 4 / span 4;
+}
+
+:host(.oc-col-span-5) {
+  grid-column: span 5 / span 5;
+}
+
+:host(.oc-col-span-6) {
+  grid-column: span 6 / span 6;
+}
+
+:host(.oc-col-span-7) {
+  grid-column: span 7 / span 7;
+}
+
+:host(.oc-col-span-8) {
+  grid-column: span 8 / span 8;
+}
+
+:host(.oc-col-span-9) {
+  grid-column: span 9 / span 9;
+}
+
+:host(.oc-col-span-10) {
+  grid-column: span 10 / span 10;
+}
+
+:host(.oc-col-span-11) {
+  grid-column: span 11 / span 11;
+}
+
+:host(.oc-col-span-12) {
+  grid-column: span 12 / span 12;
+}

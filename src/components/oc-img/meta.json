@@ -1,0 +1,31 @@
+{
+  "type": "oc-img",
+  "label": "Image",
+  "tags": ["Image"],
+  "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAATUlEQVR4nGNgGAWjYEgADwYGhscMDAz/qYwfQc0GM6ht+H8kS+AcaoP/MHMH1IL/aHKE+IPPAkoA/Sx4ROtk6kEjSx7BMtooGAWDHAAAKol/uh6xabEAAAAASUVORK5CYII=",
+  "canHaveChildren": false,
+  "props": {
+    "src": {
+      "type": "text",
+      "label":"Source",
+      "value": ""
+    },
+    "alt": {
+      "type": "text",
+      "label": "Alt text",
+      "value": ""
+    },
+    "width": {
+      "type": "text",
+      "label": "Width",
+      "value": "100%"
+    },
+    "height": {
+      "type":"text",
+      "label": "Height",
+      "value": "auto"
+    },
+   
+    "style": {"type": "object", "label": "Styles", "value": {"flex": 1}}
+  }
+}

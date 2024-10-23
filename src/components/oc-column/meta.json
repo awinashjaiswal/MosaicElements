@@ -1,0 +1,19 @@
+{
+  "type": "oc-column",
+  "label": "Col",
+  "tags": ["column"],
+  "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAATUlEQVR4nGNgGAWjYEgADwYGhscMDAz/qYwfQc0GM6ht+H8kS+AcaoP/MHMH1IL/aHKE+IPPAkoA/Sx4ROtk6kEjSx7BMtooGAWDHAAAKol/uh6xabEAAAAASUVORK5CYII=",
+  "canHaveChildren": true,
+  "props": {
+    "col-span": {
+      "type": "range",
+      "label":"Colspan",
+      "max": 12,
+      "min": 1,
+      "value": 3
+    },
+    
+   
+    "style": {"type": "object", "label": "Styles", "value": {"flex": 1}}
+  }
+}

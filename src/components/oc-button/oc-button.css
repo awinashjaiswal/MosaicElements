@@ -1,0 +1,72 @@
+:host {
+  display: inline-block;
+}
+.btn {
+  position: relative;
+  overflow: hidden;  /* Constrain the ripple within the button */
+  border-radius: 4px;
+  padding: 8px 16px;
+  transition: background-color 0.3s ease;
+}
+
+.ripple {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.3);
+  transform: scale(0);
+  animation: ripple-animation 0.6s linear;
+  pointer-events: none; /* Ignore pointer events for ripple element */
+}
+@layer components {
+  .btn {
+    @apply px-4 py-2 font-bold rounded;
+  }
+  .btn-outline {
+    @apply border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white;
+  }
+  .btn-dashed {
+    @apply border-dashed border-2 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white;
+  }
+  .btn-solid {
+    @apply bg-blue-500 text-white hover:bg-blue-600;
+  }
+  .btn-filled {
+    @apply bg-gradient-to-r from-blue-500 to-indigo-500 text-black hover:from-blue-600 hover:to-indigo-600 shadow-lg;
+  }
+  .btn-text {
+    @apply text-blue-500 hover:text-blue-600;
+  }
+  .btn-link {
+    @apply text-blue-500 underline hover:no-underline hover:text-blue-600;
+  }
+
+   /* Shape classes */
+  .btn-round {
+    @apply rounded-full;
+  }
+  .btn-circle {
+    @apply w-12 h-12 rounded-full flex items-center justify-center; /* Flexbox centering for icons */
+  }
+
+  /* Size classes */
+  .btn-small {
+    @apply px-2 py-1 text-sm; /* Smaller padding and font size */
+  }
+
+  .btn-medium {
+    @apply px-4 py-2 text-base; /* Default padding and font size */
+  }
+
+  .btn-large {
+    @apply px-6 py-3 text-lg; /* Larger padding and font size */
+  }
+}
+
+
+
+@keyframes ripple-animation {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "oc-container",
+  "label": "Container",
+  "tags": ["Container"],
+  "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAATUlEQVR4nGNgGAWjYEgADwYGhscMDAz/qYwfQc0GM6ht+H8kS+AcaoP/MHMH1IL/aHKE+IPPAkoA/Sx4ROtk6kEjSx7BMtooGAWDHAAAKol/uh6xabEAAAAASUVORK5CYII=",
+  "canHaveChildren": true,
+  "props": {
+    "style": {
+      "type": "object",
+      "label":"Style",
+      "value": {}
+    }
+  }
+}

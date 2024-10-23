@@ -1,0 +1,49 @@
+
+/* card.css */
+
+:host {
+  display: block;
+}
+
+.card {
+  @apply bg-white  shadow-lg max-w-sm border border-gray-200; /* Ensure shadow-lg is applied for a larger shadow */
+}
+
+.header {
+  @apply p-4;
+}
+
+.content {
+  @apply p-4; 
+}
+
+.footer {
+  @apply p-4; 
+} 
+
+/* card.css */
+/* .card {
+  background-color: white;
+  border-radius: 0.5rem;
+  max-width: 24rem;
+  border: 1px solid rgba(229, 231, 235, 1);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.header {
+  padding: 1rem;
+  background-color: rgba(243, 244, 246, 1);
+  border-bottom: 1px solid rgba(229, 231, 235, 1);
+}
+
+.content {
+  padding: 1rem;
+}
+
+.footer {
+  padding: 1rem;
+  background-color: rgba(243, 244, 246, 1);
+  border-top: 1px solid rgba(229, 231, 235, 1);
+  text-align: right;
+} */
+

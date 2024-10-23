@@ -1,0 +1,7 @@
+:host {
+  display: block;
+}
+::slotted(div) {
+  @apply text-gray-600 hover:text-gray-900;
+}
+
