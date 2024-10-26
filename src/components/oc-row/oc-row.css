@@ -3,4 +3,5 @@
 }
 .grid-container {
   @apply grid grid-flow-row-dense grid-cols-12;
+  min-height: 50px;
 }
