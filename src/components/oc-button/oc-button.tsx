@@ -16,6 +16,9 @@ export class OcButton {
 
   @Element() el: HTMLElement;  // Reference to the component's element
 
+  get hostClasses() {
+    return this.el.className;
+  }
   // Map variant to respective class name
   private getButtonClasses() {
     const variantClassMap = {
@@ -78,7 +81,7 @@ export class OcButton {
   render() {
     return (
       <Host>
-        <button class={this.getButtonClasses()} onClick={(event) => this.handleClick(event)}>
+        <button class={this.getButtonClasses()+ '' + this.hostClasses} onClick={(event) => this.handleClick(event)}>
           <slot name="start-icon"></slot> {/* Slot for adding start icon */}
             {this.shape !== 'circle' && <span>{this.label}</span>} {/* Show label unless it's a circle button */}
           <slot name="end-icon"></slot> {/* Slot for adding end icon */}
