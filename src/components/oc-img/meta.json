@@ -8,12 +8,12 @@
     "src": {
       "type": "text",
       "label":"Source",
-      "value": ""
+      "value": "https://artcorvibes.com/wp-content/uploads/2024/07/Make-Mosaic-Art-00.webp"
     },
     "alt": {
       "type": "text",
       "label": "Alt text",
-      "value": ""
+      "value": "Mosaic tree"
     },
     "width": {
       "type": "text",
