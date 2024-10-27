@@ -3,7 +3,7 @@ import { Component, Event, EventEmitter, Prop, h, Host, Element } from '@stencil
 @Component({
   tag: 'oc-button',
   styleUrl: 'oc-button.css',
-  shadow: false
+  shadow: true
 })
 
 export class OcButton {
