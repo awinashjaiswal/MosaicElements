@@ -3,7 +3,7 @@ import { Component, h } from '@stencil/core';
 @Component({
   tag: 'oc-row',
   styleUrl: 'oc-row.css',
-  shadow: false,
+  shadow: true,
 })
 export class OcRow {
   render() {
