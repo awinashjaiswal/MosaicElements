@@ -3,7 +3,6 @@ import { Component, Element, h } from '@stencil/core';
 @Component({
   tag: 'oc-header',
   styleUrl: 'oc-header.css',
-  shadow: true,
 })
 export class OcHeader {
   @Element() el: HTMLElement;

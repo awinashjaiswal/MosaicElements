@@ -6,6 +6,6 @@
   "canHaveChildren": true,
   "props": {
     
-    "style": {"type": "object", "label": "Styles", "value": {"flex": 1}}
+    "style": {"type": "object", "label": "Styles"}
   }
 }

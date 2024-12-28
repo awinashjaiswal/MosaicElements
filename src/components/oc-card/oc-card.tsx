@@ -3,7 +3,6 @@ import { Component, h } from '@stencil/core';
 @Component({
   tag: 'oc-card',
   styleUrl: 'oc-card.css',
-  shadow: true, 
 })
 export class OcCard {
   render() {

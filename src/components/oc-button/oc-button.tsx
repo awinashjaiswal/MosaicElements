@@ -3,7 +3,6 @@ import { Component, Event, EventEmitter, Prop, h, Host, Element } from '@stencil
 @Component({
   tag: 'oc-button',
   styleUrl: 'oc-button.css',
-  shadow: true
 })
 
 export class OcButton {
@@ -12,7 +11,7 @@ export class OcButton {
   @Prop() shape: 'round' | 'circle' | 'default' = 'default'; // Shape options
   @Prop() size: 'small' | 'medium' | 'large' = 'medium'; // Size options
 
-  @Event() onClick: EventEmitter<void>;  // Event for button click
+  @Event() click: EventEmitter<void>;  // Event for button click
 
   @Element() el: HTMLElement;  // Reference to the component's element
 
@@ -75,7 +74,7 @@ export class OcButton {
     });
 
     // Emit the click event
-    this.onClick.emit();
+    this.click.emit();
   }
 
   render() {

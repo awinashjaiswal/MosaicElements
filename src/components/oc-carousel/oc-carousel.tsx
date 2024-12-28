@@ -5,7 +5,7 @@ import { Component, h, State, Element } from '@stencil/core';
 @Component({
   tag: 'oc-carousel',
   styleUrl: 'oc-carousel.css',
-  shadow: true,
+  shadow: false,
 })
 
 export class OcCarousel {

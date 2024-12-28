@@ -4,28 +4,29 @@
   "tags": ["Image"],
   "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAATUlEQVR4nGNgGAWjYEgADwYGhscMDAz/qYwfQc0GM6ht+H8kS+AcaoP/MHMH1IL/aHKE+IPPAkoA/Sx4ROtk6kEjSx7BMtooGAWDHAAAKol/uh6xabEAAAAASUVORK5CYII=",
   "canHaveChildren": false,
+  "defaultvalue": {
+    "src": "https://artcorvibes.com/wp-content/uploads/2024/07/Make-Mosaic-Art-00.webp",
+    "alt": "Mosaic tree",
+    "width": "100",
+    "height": "auto"
+  },
   "props": {
     "src": {
       "type": "text",
-      "label":"Source",
-      "value": "https://artcorvibes.com/wp-content/uploads/2024/07/Make-Mosaic-Art-00.webp"
+      "label":"Source"
     },
     "alt": {
       "type": "text",
-      "label": "Alt text",
-      "value": "Mosaic tree"
+      "label": "Alt text"
     },
     "width": {
       "type": "text",
-      "label": "Width",
-      "value": "100"
+      "label": "Width"
     },
     "height": {
       "type":"text",
-      "label": "Height",
-      "value": "auto"
+      "label": "Height"
     },
-   
-    "style": {"type": "object", "label": "Styles", "value": {"flex": 1}}
+    "style": {"type": "object", "label": "Styles"}
   }
 }

@@ -3,7 +3,6 @@ import { Component, h, State, Prop } from '@stencil/core';
 @Component({
   tag: 'oc-img',
   styleUrl: 'oc-img.css',
-  shadow: true,
 })
 export class OcImg {
   @Prop() src: string; // URL of the image to display

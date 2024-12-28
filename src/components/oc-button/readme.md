@@ -17,9 +17,9 @@
 
 ## Events
 
-| Event     | Description | Type                |
-| --------- | ----------- | ------------------- |
-| `onClick` |             | `CustomEvent<void>` |
+| Event   | Description | Type                |
+| ------- | ----------- | ------------------- |
+| `click` |             | `CustomEvent<void>` |
 
 
 ----------------------------------------------

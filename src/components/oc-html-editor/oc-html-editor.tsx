@@ -2,8 +2,7 @@ import { Component, h, State, Element } from '@stencil/core';
 
 @Component({
   tag: 'oc-html-editor',
-  styleUrl: 'oc-html-editor.css',
-  shadow: true,
+  styleUrl: 'oc-html-editor.css'
 })
 
 export class OcHtmlEditor {

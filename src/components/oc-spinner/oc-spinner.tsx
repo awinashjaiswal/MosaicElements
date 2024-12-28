@@ -3,7 +3,6 @@ import { Component, h } from '@stencil/core';
 @Component({
   tag: 'oc-spinner',
   styleUrl: 'oc-spinner.css',
-  shadow: true,
 })
 export class OcSpinner {
   render() {

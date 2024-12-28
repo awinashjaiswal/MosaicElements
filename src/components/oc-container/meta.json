@@ -7,8 +7,7 @@
   "props": {
     "style": {
       "type": "object",
-      "label":"Style",
-      "value": {}
+      "label":"Style"
     }
   }
 }

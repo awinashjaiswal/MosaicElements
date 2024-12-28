@@ -6,6 +6,11 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
+    interface MosDrawer {
+        "isBottomOpen": boolean;
+        "isLeftOpen": boolean;
+        "isRightOpen": boolean;
+    }
     interface OcButton {
         "label": string;
         "shape": 'round' | 'circle' | 'default';
@@ -17,7 +22,7 @@ export namespace Components {
     interface OcCarousel {
     }
     interface OcCollapsible {
-        "title": string;
+        "label": string;
     }
     interface OcColumn {
         "colSpan": string;
@@ -58,8 +63,14 @@ export interface OcInputCustomEvent<T> extends CustomEvent<T> {
     target: HTMLOcInputElement;
 }
 declare global {
+    interface HTMLMosDrawerElement extends Components.MosDrawer, HTMLStencilElement {
+    }
+    var HTMLMosDrawerElement: {
+        prototype: HTMLMosDrawerElement;
+        new (): HTMLMosDrawerElement;
+    };
     interface HTMLOcButtonElementEventMap {
-        "onClick": void;
+        "click": void;
     }
     interface HTMLOcButtonElement extends Components.OcButton, HTMLStencilElement {
         addEventListener<K extends keyof HTMLOcButtonElementEventMap>(type: K, listener: (this: HTMLOcButtonElement, ev: OcButtonCustomEvent<HTMLOcButtonElementEventMap[K]>) => any, options?: boolean | AddEventListenerOptions): void;
@@ -159,6 +170,7 @@ declare global {
         new (): HTMLScreenLayoutElement;
     };
     interface HTMLElementTagNameMap {
+        "mos-drawer": HTMLMosDrawerElement;
         "oc-button": HTMLOcButtonElement;
         "oc-card": HTMLOcCardElement;
         "oc-carousel": HTMLOcCarouselElement;
@@ -175,9 +187,14 @@ declare global {
     }
 }
 declare namespace LocalJSX {
+    interface MosDrawer {
+        "isBottomOpen"?: boolean;
+        "isLeftOpen"?: boolean;
+        "isRightOpen"?: boolean;
+    }
     interface OcButton {
         "label"?: string;
-        "onOnClick"?: (event: OcButtonCustomEvent<void>) => void;
+        "onClick"?: (event: OcButtonCustomEvent<void>) => void;
         "shape"?: 'round' | 'circle' | 'default';
         "size"?: 'small' | 'medium' | 'large';
         "variant"?: 'outlined' | 'dashed' | 'solid' | 'filled' | 'text' | 'link';
@@ -187,7 +204,7 @@ declare namespace LocalJSX {
     interface OcCarousel {
     }
     interface OcCollapsible {
-        "title"?: string;
+        "label"?: string;
     }
     interface OcColumn {
         "colSpan"?: string;
@@ -220,6 +237,7 @@ declare namespace LocalJSX {
     interface ScreenLayout {
     }
     interface IntrinsicElements {
+        "mos-drawer": MosDrawer;
         "oc-button": OcButton;
         "oc-card": OcCard;
         "oc-carousel": OcCarousel;
@@ -239,6 +257,7 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "mos-drawer": LocalJSX.MosDrawer & JSXBase.HTMLAttributes<HTMLMosDrawerElement>;
             "oc-button": LocalJSX.OcButton & JSXBase.HTMLAttributes<HTMLOcButtonElement>;
             "oc-card": LocalJSX.OcCard & JSXBase.HTMLAttributes<HTMLOcCardElement>;
             "oc-carousel": LocalJSX.OcCarousel & JSXBase.HTMLAttributes<HTMLOcCarouselElement>;

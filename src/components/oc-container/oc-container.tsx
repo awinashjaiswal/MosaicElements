@@ -3,7 +3,6 @@ import { Component, Prop, h } from '@stencil/core';
 @Component({
   tag: 'oc-container',
   styleUrl: 'oc-container.css',
-  shadow: true,
 })
 
 export class OcContainer {

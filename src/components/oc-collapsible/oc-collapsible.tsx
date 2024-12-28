@@ -3,11 +3,10 @@ import { Component, h, State, Prop } from '@stencil/core';
 @Component({
   tag: 'oc-collapsible',
   styleUrl: 'oc-collapsible.css',
-  shadow: true,
 })
 export class OcCollapsible {
   @State() isOpen: boolean = false; // Track whether the section is open
-  @Prop() title: string = "Title"
+  @Prop() label: string = "Title"
   toggleSection() {
     this.isOpen = !this.isOpen; // Toggle the open/close state
   }
@@ -20,7 +19,7 @@ export class OcCollapsible {
           class="w-full text-left bg-gray-100 hover:bg-gray-200 p-4 rounded-t-md font-semibold flex justify-between items-center"
           onClick={() => this.toggleSection()}
         >
-          <span>{this.title}</span>
+          <span>{this.label}</span>
           <svg
             class={`transition-transform duration-300 transform ${
               this.isOpen ? 'rotate-180' : ''
