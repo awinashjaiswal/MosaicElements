@@ -68,14 +68,13 @@ export class OcImg {
     return (
       <Host>
         {/* Always render the image but only apply the src when isImageVisible is true */}
-        <div class="viewer-image">
+        
           <img
             ref={el => (this.imageRef = el)}  // Always set the image ref
             src={this.isImageVisible ? this.src : ''} // Load the image source only when visible
             alt={this.alt}
             style={this.parseInlineStyles(this.style)}
           />
-        </div>
         {/* Optionally show a loading spinner while the image is loading */}
         {!this.isImageVisible && (
           <div class="placeholder">Loading...</div>

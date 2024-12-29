@@ -1,27 +1,4 @@
 :host {
-  display: block;
+  display: inline-block;
 }
 
-
-/* single-image-viewer.css */
-.image-viewer {
-  @apply flex justify-center items-center p-4;
-}
-
-.viewer-image {
-  @apply w-full h-full max-w-lg; /* Max width to limit image size */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-
-.viewer-image img {
-  @apply object-cover; /* Ensures the image scales nicely */
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.placeholder {
-  @apply text-gray-500 italic; /* Style the placeholder */
-}
