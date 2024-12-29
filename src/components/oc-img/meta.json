@@ -6,9 +6,7 @@
   "canHaveChildren": false,
   "defaultValue": {
     "src": "https://artcorvibes.com/wp-content/uploads/2024/07/Make-Mosaic-Art-00.webp",
-    "alt": "Mosaic tree",
-    "width": "100",
-    "height": "auto"
+    "alt": "Mosaic tree"
   },
   "props": {
     "src": {
