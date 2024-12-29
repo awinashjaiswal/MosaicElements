@@ -6,11 +6,6 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
-    interface MosDrawer {
-        "isBottomOpen": boolean;
-        "isLeftOpen": boolean;
-        "isRightOpen": boolean;
-    }
     interface OcButton {
         "label": string;
         "shape": 'round' | 'circle' | 'default';
@@ -61,12 +56,6 @@ export interface OcInputCustomEvent<T> extends CustomEvent<T> {
     target: HTMLOcInputElement;
 }
 declare global {
-    interface HTMLMosDrawerElement extends Components.MosDrawer, HTMLStencilElement {
-    }
-    var HTMLMosDrawerElement: {
-        prototype: HTMLMosDrawerElement;
-        new (): HTMLMosDrawerElement;
-    };
     interface HTMLOcButtonElementEventMap {
         "click": void;
     }
@@ -168,7 +157,6 @@ declare global {
         new (): HTMLScreenLayoutElement;
     };
     interface HTMLElementTagNameMap {
-        "mos-drawer": HTMLMosDrawerElement;
         "oc-button": HTMLOcButtonElement;
         "oc-card": HTMLOcCardElement;
         "oc-carousel": HTMLOcCarouselElement;
@@ -185,11 +173,6 @@ declare global {
     }
 }
 declare namespace LocalJSX {
-    interface MosDrawer {
-        "isBottomOpen"?: boolean;
-        "isLeftOpen"?: boolean;
-        "isRightOpen"?: boolean;
-    }
     interface OcButton {
         "label"?: string;
         "onClick"?: (event: OcButtonCustomEvent<void>) => void;
@@ -233,7 +216,6 @@ declare namespace LocalJSX {
     interface ScreenLayout {
     }
     interface IntrinsicElements {
-        "mos-drawer": MosDrawer;
         "oc-button": OcButton;
         "oc-card": OcCard;
         "oc-carousel": OcCarousel;
@@ -253,7 +235,6 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
-            "mos-drawer": LocalJSX.MosDrawer & JSXBase.HTMLAttributes<HTMLMosDrawerElement>;
             "oc-button": LocalJSX.OcButton & JSXBase.HTMLAttributes<HTMLOcButtonElement>;
             "oc-card": LocalJSX.OcCard & JSXBase.HTMLAttributes<HTMLOcCardElement>;
             "oc-carousel": LocalJSX.OcCarousel & JSXBase.HTMLAttributes<HTMLOcCarouselElement>;
