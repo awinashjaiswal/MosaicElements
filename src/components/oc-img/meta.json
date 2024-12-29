@@ -19,14 +19,6 @@
       "type": "text",
       "label": "Alt text"
     },
-    "width": {
-      "type": "text",
-      "label": "Width"
-    },
-    "height": {
-      "type":"text",
-      "label": "Height"
-    },
     "style": {"type": "object", "label": "Styles"}
   }
 }

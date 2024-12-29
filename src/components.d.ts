@@ -37,9 +37,7 @@ export namespace Components {
     }
     interface OcImg {
         "alt": string;
-        "height": string;
         "src": string;
-        "width": string;
     }
     interface OcInput {
         "label": string;
@@ -219,9 +217,7 @@ declare namespace LocalJSX {
     }
     interface OcImg {
         "alt"?: string;
-        "height"?: string;
         "src"?: string;
-        "width"?: string;
     }
     interface OcInput {
         "label"?: string;
